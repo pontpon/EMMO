@@ -3,8 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <title>Spotify Digital Rights Management Research — Lia Portfolio</title>
   <meta name="description" content="A James Cook University information-security literature review examining Spotify DRM, copyright, privacy, artist rights, platform control, and ACS ethics.">
+  <script>document.documentElement.classList.add('js');</script>
   <link href="assets/img/favicon.png" rel="icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +14,8 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/project-details.css" rel="stylesheet">
+  <link href="assets/css/case-study-system.css" rel="stylesheet">
+  <link href="assets/css/security-case.css?v=20260721" rel="stylesheet">
 </head>
 <body class="project-detail-page" data-project="e-security-research">
   <header class="site-header" id="header">
@@ -22,9 +26,114 @@
     </nav>
     <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><i class="bi bi-list"></i></button>
   </header>
-  <main id="project-page" class="detail-main"></main>
+  <main id="project-page" class="detail-main security-case">
+    <article class="security-case-v2">
+      <header class="security-hero" id="overview">
+        <div class="detail-shell security-hero-grid">
+          <div class="security-hero-copy detail-reveal">
+            <p class="security-eyebrow">Information Security Research · Literature Review</p>
+            <h1>Digital Rights Management in Music Streaming</h1>
+            <p class="security-subtitle">The Case of Spotify</p>
+            <p class="security-lead">A critical review of how DRM protects digital music while influencing ownership, privacy, artist autonomy, platform control and ethical governance.</p>
+            <div class="security-badges" aria-label="Research topics"><span>Cybersecurity</span><span>DRM</span><span>Risk Analysis</span><span>Academic Research</span><span>ACS Ethics</span></div>
+            <dl class="security-meta" aria-label="Project metadata"><div><dt>Institution</dt><dd>James Cook University</dd></div><div><dt>Course</dt><dd>Information Security</dd></div><div><dt>Completed</dt><dd>November 2025</dd></div></dl>
+            <div class="security-actions"><button class="security-button primary" type="button" data-research-modal-open>View Full Report <i class="bi bi-arrow-right"></i></button><a class="security-button secondary" href="assets/docs/Exploring_Digital_Rights_Management_in_Music_Streaming_Platforms_The_Case_of_Spotify.pdf" target="_blank" rel="noopener noreferrer">Open PDF <i class="bi bi-box-arrow-up-right"></i></a><a class="security-text-link" href="assets/docs/Exploring_Digital_Rights_Management_in_Music_Streaming_Platforms_The_Case_of_Spotify.pdf" download>Download <i class="bi bi-download"></i></a></div>
+          </div>
+          <div class="security-hero-visual detail-reveal" aria-label="Abstract security visual representing protected music access">
+            <span class="security-grid" aria-hidden="true"></span><span class="security-orbit one" aria-hidden="true"></span><span class="security-orbit two" aria-hidden="true"></span>
+            <div class="security-shield"><i class="bi bi-shield-lock"></i><strong>DRM</strong><small>Protected access</small></div>
+            <span class="security-node music"><i class="bi bi-music-note-beamed"></i> Music</span><span class="security-node access"><i class="bi bi-key"></i> Access</span><span class="security-node privacy"><i class="bi bi-fingerprint"></i> Privacy</span><span class="security-node ethics"><i class="bi bi-balance-scale"></i> Ethics</span>
+          </div>
+        </div>
+      </header>
+
+      <nav class="security-toc" aria-label="Research case study sections"><div class="detail-shell"><a class="active" href="#overview">Overview</a><a href="#summary">Summary</a><a href="#focus">Research Focus</a><a href="#process">Process</a><a href="#findings">Findings</a><a href="#recommendations">Recommendations</a><a href="#reflection">Reflection</a><a href="#report">Full Report</a></div></nav>
+
+      <section class="security-section" id="summary" aria-labelledby="summary-title"><div class="detail-shell">
+        <header class="security-heading detail-reveal"><span>Executive Summary</span><h2 id="summary-title">The research in four points.</h2></header>
+        <div class="security-summary-grid">
+          <article class="detail-reveal"><i class="bi bi-bullseye"></i><h3>Objective</h3><p>Examine how Spotify’s DRM changes access, ownership and power among users, artists, rights holders and the platform.</p></article>
+          <article class="detail-reveal"><i class="bi bi-lightbulb"></i><h3>Key Outcome</h3><p>DRM supports licensed access and royalty tracking, but raises transparency, privacy, autonomy and governance concerns.</p></article>
+          <article class="detail-reveal"><i class="bi bi-person-check"></i><h3>My Contribution</h3><p>Conducted the literature search, screened sources, compared evidence, synthesised themes and wrote the final review.</p></article>
+          <article class="detail-reveal"><i class="bi bi-diagram-3"></i><h3>Methods &amp; Framework</h3><p>Google Scholar screening, critical literature synthesis, information-security analysis and ACS ethical evaluation.</p></article>
+        </div>
+      </div></section>
+
+      <section class="security-section alt" aria-labelledby="snapshot-title"><div class="detail-shell">
+        <header class="security-heading detail-reveal"><span>Project Snapshot</span><h2 id="snapshot-title">A verified research workflow.</h2></header>
+        <dl class="security-snapshot">
+          <div class="detail-reveal"><dt>Project type</dt><dd>Academic literature review</dd></div><div class="detail-reveal"><dt>Research topic</dt><dd>Spotify DRM</dd></div><div class="detail-reveal"><dt>Initial search</dt><dd>48 articles</dd></div><div class="detail-reveal"><dt>Shortlisted</dt><dd>17 papers</dd></div><div class="detail-reveal"><dt>Final synthesis</dt><dd>8 key papers</dd></div><div class="detail-reveal"><dt>Deliverable</dt><dd>23-page research paper</dd></div>
+        </dl>
+      </div></section>
+
+      <section class="security-section" id="focus" aria-labelledby="focus-title"><div class="detail-shell">
+        <header class="security-heading detail-reveal"><span>Research Focus</span><h2 id="focus-title">Security controls with human consequences.</h2><p>The review connected technical protection with the legal, commercial and ethical decisions surrounding digital music access.</p></header>
+        <div class="security-focus-grid">
+          <article class="detail-reveal"><i class="bi bi-shield-lock"></i><h3>Content Protection</h3><p>Encryption, authentication and access controls protect licensed music distribution.</p></article>
+          <article class="detail-reveal"><i class="bi bi-key"></i><h3>Ownership &amp; Access</h3><p>Streaming replaces ownership with revocable, permission-based listening access.</p></article>
+          <article class="detail-reveal"><i class="bi bi-c-circle"></i><h3>Copyright &amp; Licensing</h3><p>Technical controls reinforce contractual restrictions and global copyright frameworks.</p></article>
+          <article class="detail-reveal"><i class="bi bi-fingerprint"></i><h3>Privacy</h3><p>Playback monitoring creates questions about consent, transparency and secondary data use.</p></article>
+          <article class="detail-reveal"><i class="bi bi-person-workspace"></i><h3>Artist Rights</h3><p>Platform-controlled licensing and reporting affect autonomy, visibility and compensation.</p></article>
+          <article class="detail-reveal"><i class="bi bi-balance-scale"></i><h3>Ethical Governance</h3><p>The ACS principles frame fairness, public interest, honesty and professional responsibility.</p></article>
+        </div>
+      </div></section>
+
+      <section class="security-section alt" id="process" aria-labelledby="process-title"><div class="detail-shell">
+        <header class="security-heading detail-reveal"><span>Research Process</span><h2 id="process-title">From broad search to focused recommendations.</h2></header>
+        <ol class="security-process detail-reveal"><li><span>01</span><h3>Define Context</h3><p>Connected DRM with security, copyright and platform governance.</p></li><li><span>02</span><h3>Search Literature</h3><p>Identified 48 academic sources through Google Scholar.</p></li><li><span>03</span><h3>Screen Evidence</h3><p>Shortlisted 17 relevant papers and selected eight for analysis.</p></li><li><span>04</span><h3>Compare Themes</h3><p>Evaluated methods, arguments, evidence and limitations.</p></li><li><span>05</span><h3>Synthesise Findings</h3><p>Grouped insights across security, ownership, privacy and ethics.</p></li><li><span>06</span><h3>Recommend Reform</h3><p>Translated the synthesis into practical governance priorities.</p></li></ol>
+      </div></section>
+
+      <section class="security-section" id="findings" aria-labelledby="findings-title"><div class="detail-shell">
+        <header class="security-heading detail-reveal"><span>Key Findings</span><h2 id="findings-title">Protection works, but trade-offs remain.</h2></header>
+        <div class="security-findings-grid">
+          <article class="detail-reveal" data-tone="positive"><span>Positive Effect</span><h3>Licensed access and piracy control</h3><p>DRM helps channel listeners toward protected streaming access and supports usage-based royalty tracking.</p><small>Impact: supports rights enforcement and digital distribution.</small></article>
+          <article class="detail-reveal" data-tone="info"><span>Access Model</span><h3>Access replaces ownership</h3><p>Subscriptions provide limited, revocable permission rather than transferable ownership of music files.</p><small>Impact: users remain dependent on accounts, devices and licences.</small></article>
+          <article class="detail-reveal" data-tone="warning"><span>Governance Concern</span><h3>Platform power is concentrated</h3><p>Control of DRM infrastructure strengthens Spotify’s influence over access, distribution and commercial participation.</p><small>Response: clearer governance and wider stakeholder participation.</small></article>
+          <article class="detail-reveal" data-tone="warning"><span>Transparency Concern</span><h3>Royalty systems remain difficult to audit</h3><p>Automated tracking supports payment, while opaque calculations can weaken artist trust.</p><small>Response: transparent reporting and independent audits.</small></article>
+          <article class="detail-reveal" data-tone="risk"><span>Privacy Concern</span><h3>Playback monitoring needs oversight</h3><p>Usage data supports licensing and anti-fraud controls but also raises consent and behavioural-marketing concerns.</p><small>Response: data minimisation and clearer privacy controls.</small></article>
+          <article class="detail-reveal" data-tone="risk"><span>Creator Concern</span><h3>Independent artists face unequal power</h3><p>Standardised contracts and platform dependence can limit negotiation, autonomy and visibility.</p><small>Response: equitable participation and accessible dispute mechanisms.</small></article>
+        </div>
+      </div></section>
+
+      <section class="security-section alt" id="details" aria-labelledby="details-title"><div class="detail-shell security-reading-column">
+        <header class="security-heading detail-reveal"><span>Supporting Research</span><h2 id="details-title">Explore the academic detail.</h2><p>The essential case-study story remains visible above; the extended evidence is available here and in the complete paper.</p></header>
+        <div class="security-accordions">
+          <details class="detail-reveal"><summary>View Detailed Methodology <i class="bi bi-plus-lg"></i></summary><div><p>The review began with 48 Google Scholar results. Seventeen papers were shortlisted for relevance to legal, economic, ethical and structural DRM issues; eight were selected for focused comparison.</p><ul><li>Compared research focus, methods, arguments and limitations</li><li>Organised evidence around access, licensing, security, artists, users and ethics</li><li>Reviewed structure, citations and evidence-to-conclusion alignment</li></ul></div></details>
+          <details class="detail-reveal"><summary>Explore Security and Technical Context <i class="bi bi-plus-lg"></i></summary><div><p>DRM combines encryption, authentication, licensing and access control to restrict playback to authorised users, devices, subscriptions and regions.</p><ul><li>Controls copying, transfer and unauthorised distribution</li><li>Supports protected online and offline playback</li><li>Introduces circumvention, implementation and governance risks</li></ul></div></details>
+          <details class="detail-reveal"><summary>Read Extended Findings <i class="bi bi-plus-lg"></i></summary><div><ul><li>Copyright owners retain legal rights while platforms exercise practical control through infrastructure and contracts.</li><li>Offline downloads remain encrypted and tied to subscription status.</li><li>Low-connectivity users can be disproportionately affected by recurring verification requirements.</li><li>International laws reinforce DRM protections while creating debate around fair use and research.</li></ul></div></details>
+          <details class="detail-reveal"><summary>View Core References <i class="bi bi-plus-lg"></i></summary><div><p>The final synthesis used eight papers by Beekhuyzen; Matin; Rafi, Shepherd and Markantonakis; Scharf; Srivastava; Subramanya and Yi; Zhang and Lou; and Zhao, Qi and Ma. Full publication details appear in the research paper.</p></div></details>
+        </div>
+      </div></section>
+
+      <section class="security-section" id="recommendations" aria-labelledby="recommendations-title"><div class="detail-shell">
+        <header class="security-heading detail-reveal"><span>Recommendations</span><h2 id="recommendations-title">Priorities supported by the review.</h2></header>
+        <div class="security-recommendations">
+          <article class="detail-reveal"><span>01</span><i class="bi bi-receipt"></i><h3>Clarify royalties and contracts</h3><p>Improve the visibility of calculations, contractual terms and data used in compensation.</p></article>
+          <article class="detail-reveal"><span>02</span><i class="bi bi-clipboard-check"></i><h3>Enable independent auditing</h3><p>Review DRM-linked reporting and algorithms for accuracy, fairness and accountability.</p></article>
+          <article class="detail-reveal"><span>03</span><i class="bi bi-shield-check"></i><h3>Strengthen privacy protection</h3><p>Use transparent, proportionate data practices with meaningful user control.</p></article>
+          <article class="detail-reveal"><span>04</span><i class="bi bi-universal-access"></i><h3>Expand access and fair use</h3><p>Consider accessibility, education and users with limited connectivity in future DRM design.</p></article>
+          <article class="detail-reveal"><span>05</span><i class="bi bi-people"></i><h3>Support creator participation</h3><p>Include independent artists in governance and provide accessible complaint pathways.</p></article>
+        </div>
+      </div></section>
+
+      <section class="security-section alt" id="reflection" aria-labelledby="reflection-title"><div class="detail-shell">
+        <header class="security-heading detail-reveal"><span>Reflection &amp; Skills</span><h2 id="reflection-title">Connecting technical protection with human impact.</h2></header>
+        <div class="security-reflection-grid"><article class="detail-reveal"><h3>What I learned</h3><p>Information-security controls cannot be evaluated separately from ownership, privacy, fairness and platform governance.</p></article><article class="detail-reveal"><h3>What challenged me</h3><p>The research required comparing legal, technical, creator and user perspectives without treating one viewpoint as complete.</p></article><article class="detail-reveal"><h3>What I would explore next</h3><p>Future research could add artist and listener interviews, platform comparisons and newer privacy and transparency practices.</p></article></div>
+        <div class="security-skill-tags detail-reveal" aria-label="Skills demonstrated"><span>Literature Review</span><span>Critical Analysis</span><span>Information Security</span><span>Risk Evaluation</span><span>Academic Writing</span><span>Technical Communication</span><span>Digital Ethics</span><span>Recommendation Development</span></div>
+      </div></section>
+
+      <section class="security-section security-report" id="report" aria-labelledby="report-title"><div class="detail-shell">
+        <article class="security-report-card detail-reveal"><figure><img src="assets/img/projects/e-security/spotify-drm-paper.webp" width="989" height="1400" alt="First page of the Spotify Digital Rights Management literature review." loading="lazy"></figure><div><span>Full Academic Research</span><h2 id="report-title">Read the complete 23-page literature review.</h2><p>Open the full paper for the complete methodology, article analysis, technical discussion, ACS ethical evaluation, findings, recommendations and references.</p><div class="security-actions"><button class="security-button primary" type="button" data-research-modal-open>View Full Report <i class="bi bi-arrow-right"></i></button><a class="security-button secondary" href="assets/docs/Exploring_Digital_Rights_Management_in_Music_Streaming_Platforms_The_Case_of_Spotify.pdf" target="_blank" rel="noopener noreferrer">Open PDF <i class="bi bi-box-arrow-up-right"></i></a><a class="security-text-link" href="assets/docs/Exploring_Digital_Rights_Management_in_Music_Streaming_Platforms_The_Case_of_Spotify.pdf" download>Download Research Paper <i class="bi bi-download"></i></a></div></div></article>
+        <nav class="project-pagination" aria-label="Project navigation"><a href="web-development.html"><small>Previous project</small>100SMILES Dental Care Website</a><a class="all-projects" href="index.html#projects">Back to all projects</a><a href="technology-literature-review.html"><small>Next project</small>Technology Literature Review</a></nav>
+      </div></section>
+
+      <dialog id="research-pdf-modal" class="research-pdf-modal" aria-labelledby="research-pdf-modal-title"><div class="research-modal-shell"><header class="research-modal-header"><div><span>Research paper</span><h2 id="research-pdf-modal-title">Spotify DRM Literature Review</h2></div><nav aria-label="Research paper actions"><a href="assets/docs/Exploring_Digital_Rights_Management_in_Music_Streaming_Platforms_The_Case_of_Spotify.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right"></i><span>Open in new tab</span></a><a href="assets/docs/Exploring_Digital_Rights_Management_in_Music_Streaming_Platforms_The_Case_of_Spotify.pdf" download><i class="bi bi-download"></i><span>Download</span></a><button type="button" data-research-modal-close aria-label="Close research paper preview"><i class="bi bi-x-lg"></i></button></nav></header><iframe data-modal-research-pdf data-src="assets/docs/Exploring_Digital_Rights_Management_in_Music_Streaming_Platforms_The_Case_of_Spotify.pdf#view=FitH" src="about:blank" title="Exploring Digital Rights Management in Music Streaming Platforms research paper"></iframe></div></dialog>
+      <noscript><p class="security-noscript">Interactive previews require JavaScript. The research summary and direct PDF links remain fully available.</p></noscript>
+    </article>
+  </main>
   <footer class="detail-footer"><a class="brand" href="index.html#home"><span class="brand-mark">L</span><span>Lia.</span></a><p>Designed with intention · Built with curiosity</p><span>© <span data-year></span> Ei Myat Moe Oo</span></footer>
   <button class="to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
-  <script src="assets/js/project-details.js"></script>
+  <script src="assets/js/project-details.js?v=20260721"></script>
+  <script src="assets/js/case-study-system.js"></script>
 </body>
 </html>

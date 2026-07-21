@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>InnerBalance Mobile UX Case Study — Lia Portfolio</title>
-  <meta name="description" content="InnerBalance is a calming mental-wellness mobile application designed through user-centred research, interface design, prototyping and usability evaluation.">
+  <title>InnerBalance UX Case Study — Lia Portfolio</title>
+  <meta name="description" content="A professional UX case study for InnerBalance, a mobile mental-wellness experience shaped by research, iterative prototyping and usability testing.">
   <link href="assets/img/favicon.png" rel="icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,8 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/project-details.css" rel="stylesheet">
-  <link href="assets/css/innerbalance.css" rel="stylesheet">
+  <link href="assets/css/innerbalance.css?v=20260721" rel="stylesheet">
+  <link href="assets/css/case-study-system.css" rel="stylesheet">
 </head>
 <body class="project-detail-page innerbalance-page">
   <header class="site-header" id="header">
@@ -24,94 +25,206 @@
     <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><i class="bi bi-list"></i></button>
   </header>
 
-  <main class="detail-main">
+  <main class="detail-main" id="project-content">
     <section class="detail-hero innerbalance-hero">
+      <span class="ib-hero-star star-one" aria-hidden="true">✦</span><span class="ib-hero-star star-two" aria-hidden="true">✦</span>
       <div class="detail-shell detail-hero-grid">
         <div class="detail-reveal">
-          <p class="detail-kicker">UX Design · Mobile Application</p>
+          <p class="detail-kicker">UX Design · Mobile Mental Wellness</p>
           <h1>InnerBalance</h1>
-          <p class="detail-lead">InnerBalance is a mobile mental-wellness application designed to provide users with a calm, supportive and accessible space for emotional reflection, stress management and healthier daily wellness habits.</p>
-          <div class="detail-tags"><span>UX Research</span><span>User-Centred Design</span><span>Mobile UI</span><span>Figma</span><span>Interactive Prototype</span><span>Usability Testing</span></div>
+          <p class="detail-lead">A supportive mobile wellness experience that helps people understand their emotions, build reflective habits and reach appropriate support through calm, accessible interaction design.</p>
+          <div class="detail-tags"><span>UX Research</span><span>Interaction Design</span><span>Mobile UI</span><span>Figma</span><span>Prototyping</span><span>Usability Testing</span></div>
           <div class="case-actions">
-            <a class="case-button" href="https://www.figma.com/proto/C7fmvOjmm4lEcJOmnW01Ej/HCI-GP?page-id=0%3A1&amp;node-id=14-3&amp;starting-point-node-id=3%3A12&amp;t=zpuUizLwxSqzOXGJ-1" target="_blank" rel="noopener noreferrer">View Interactive Prototype <i class="bi bi-box-arrow-up-right"></i></a>
-            <a class="case-button secondary" href="https://www.canva.com/design/DAGvLnEZzGg/byMm0EC7vacyEv6_S-4UEA/edit" target="_blank" rel="noopener noreferrer">View Project Board <i class="bi bi-box-arrow-up-right"></i></a>
+            <a class="case-button" href="https://www.figma.com/proto/C7fmvOjmm4lEcJOmnW01Ej/HCI-GP?page-id=0%3A1&amp;node-id=14-3&amp;starting-point-node-id=3%3A12&amp;t=zpuUizLwxSqzOXGJ-1" target="_blank" rel="noopener noreferrer">Open Interactive Prototype <i class="bi bi-arrow-up-right"></i></a>
+            <a class="case-button secondary" href="#project-documentation">View Documentation <i class="bi bi-arrow-down"></i></a>
           </div>
         </div>
-        <div class="innerbalance-hero-media detail-reveal" aria-label="InnerBalance mobile login screen presentation">
-          <span class="ib-glow glow-one"></span><span class="ib-glow glow-two"></span>
-          <div class="ib-phone hero-phone">
-            <div class="ib-phone-screen">
-              <div class="ib-login-fallback" aria-hidden="true"><i class="bi bi-flower1"></i><small>Mental Wellness</small><h2>Welcome Back</h2><label>Email address</label><span class="ib-field">you@example.com</span><label>Password</label><span class="ib-field">••••••••</span><span class="ib-login-options">Remember me <b>Forgot password?</b></span><span class="ib-signin">Sign In</span><small>New here? <b>Sign Up</b></small></div>
-              <img src="assets/img/projects/innerbalance/innerbalance-cover.png" alt="InnerBalance mental-wellness application login screen" onerror="this.hidden=true">
-            </div>
+        <button class="ib-hero-showcase detail-reveal" type="button" data-lightbox-src="assets/img/projects/innerbalance/innerbalance-board.png" data-lightbox-title="InnerBalance final mobile experience">
+          <span class="ib-showcase-label"><i class="bi bi-phone"></i> Final mobile experience</span>
+          <span class="ib-board-crop ib-board-crop--hero"><img src="assets/img/projects/innerbalance/innerbalance-board.png" alt="InnerBalance research, prototype and final mobile screens"></span>
+          <span class="ib-showcase-cue">View full project board <i class="bi bi-arrow-up-right"></i></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="detail-section" id="overview">
+      <div class="detail-shell">
+        <header class="detail-heading detail-reveal"><small>Project overview</small><h2>Making everyday mental-wellness support feel approachable</h2><p>InnerBalance was created for people navigating stress, loneliness and the stigma surrounding mental-health conversations. The concept brings mood tracking, private reflection, guided relaxation and access to support into one calm mobile experience.</p></header>
+        <div class="ib-overview-grid">
+          <article class="ib-overview-card detail-reveal"><i class="bi bi-flower1"></i><small>Project</small><strong>InnerBalance</strong><span>Mental-wellness mobile app</span></article>
+          <article class="ib-overview-card detail-reveal"><i class="bi bi-person-badge"></i><small>My role</small><strong>UI/UX Designer</strong><span>UX research and interface design</span></article>
+          <article class="ib-overview-card detail-reveal"><i class="bi bi-calendar3"></i><small>Duration</small><strong>March–July 2025</strong><span>Five-month design project</span></article>
+          <article class="ib-overview-card detail-reveal"><i class="bi bi-phone"></i><small>Platform</small><strong>Mobile</strong><span>Interactive Figma prototype</span></article>
+          <article class="ib-overview-card detail-reveal"><i class="bi bi-tools"></i><small>Core tools</small><strong>Figma · Miro · Canva</strong><span>Research, design and presentation</span></article>
+          <article class="ib-overview-card detail-reveal"><i class="bi bi-people"></i><small>Team</small><strong>Three members</strong><span>Collaborative academic project</span></article>
+        </div>
+        <div class="ib-highlight-grid" aria-label="Project highlights">
+          <article class="ib-highlight detail-reveal"><i class="bi bi-person-heart"></i><strong>User-centred Design</strong><span>Decisions grounded in target-user needs and feedback.</span></article>
+          <article class="ib-highlight detail-reveal"><i class="bi bi-bezier2"></i><strong>Interactive Prototype</strong><span>Connected mobile flows built and refined in Figma.</span></article>
+          <article class="ib-highlight detail-reveal"><i class="bi bi-clipboard-data"></i><strong>Evidence-based Research</strong><span>Questionnaire, task observation and structured evaluation.</span></article>
+          <article class="ib-highlight detail-reveal"><i class="bi bi-arrow-repeat"></i><strong>Iterative Design</strong><span>Multiple versions improved through usability feedback.</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section alt" id="challenge">
+      <div class="detail-shell">
+        <header class="detail-heading detail-reveal"><small>The problem</small><h2>The Challenge</h2><p>How might a mobile product support emotional self-care without feeling clinical, overwhelming or judgemental?</p></header>
+        <div class="ib-challenge-grid">
+          <article class="ib-story-card detail-reveal"><i class="bi bi-briefcase"></i><span>Young adults</span><h3>Users struggle to manage recurring stress privately.</h3><p>Demanding work and social stigma can make it difficult to acknowledge emotions or seek help.</p></article>
+          <article class="ib-story-card detail-reveal"><i class="bi bi-mortarboard"></i><span>Students</span><h3>Academic pressure can grow without accessible support.</h3><p>Students need simple ways to reflect, build emotional awareness and find appropriate resources.</p></article>
+          <article class="ib-story-card detail-reveal"><i class="bi bi-chat-heart"></i><span>Wellness resources</span><h3>Support often feels fragmented or difficult to approach.</h3><p>A single, culturally sensitive experience can connect private reflection, calming activities and support.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section" id="research">
+      <div class="detail-shell">
+        <header class="detail-heading detail-reveal"><small>User research</small><h2>Research shaped the experience before pixels did</h2><p>The team combined early discovery activities with prototype evaluation. No unsupported percentages are shown; the findings below reflect recurring themes recorded in the project documents.</p></header>
+        <div class="ib-research-layout">
+          <div class="ib-methods detail-reveal">
+            <h3>Research methods</h3>
+            <ul><li><i class="bi bi-lightbulb"></i><span><strong>Collaborative workshops</strong>Defined the mission, feature set and key journeys.</span></li><li><i class="bi bi-ui-checks"></i><span><strong>Questionnaire</strong>Explored expectations and prior experience with wellness apps.</span></li><li><i class="bi bi-person-video3"></i><span><strong>Task-based usability testing</strong>Observed mood logging, journaling and support flows.</span></li><li><i class="bi bi-chat-square-quote"></i><span><strong>Think-aloud and interviews</strong>Captured confusion, emotional comfort and perceived usefulness.</span></li></ul>
+          </div>
+          <div class="ib-insight-grid">
+            <article class="ib-insight detail-reveal"><small>Insight 01</small><h3>Keep emotional input simple</h3><p>Emoji-based mood selection made reflection easier to begin without requiring users to articulate complex feelings immediately.</p></article>
+            <article class="ib-insight detail-reveal"><small>Insight 02</small><h3>Create clear confirmation</h3><p>Users needed visible feedback after saving moods, journal entries and other important actions.</p></article>
+            <article class="ib-insight detail-reveal"><small>Insight 03</small><h3>Balance calm with usefulness</h3><p>Early screens felt too empty, leading to richer content, quick actions, daily tips and guided activities.</p></article>
+            <article class="ib-insight detail-reveal"><small>Insight 04</small><h3>Standardise the interface</h3><p>Consistent labels, components, contrast and navigation made the product feel more trustworthy and easier to learn.</p></article>
+          </div>
+        </div>
+        <div class="ib-audience-grid" aria-label="Target audience profiles">
+          <article class="ib-audience detail-reveal"><span class="ib-avatar"><i class="bi bi-briefcase"></i></span><div><small>Audience profile</small><h3>Young working adults</h3><p><strong>Goal:</strong> Manage recurring stress privately.</p><p><strong>Need:</strong> Quick reflection and stigma-free support.</p></div></article>
+          <article class="ib-audience detail-reveal"><span class="ib-avatar"><i class="bi bi-mortarboard"></i></span><div><small>Audience profile</small><h3>Students</h3><p><strong>Goal:</strong> Cope with academic pressure.</p><p><strong>Need:</strong> Reassurance, emotional tracking and clear resources.</p></div></article>
+          <article class="ib-audience detail-reveal"><span class="ib-avatar"><i class="bi bi-person-hearts"></i></span><div><small>Audience profile</small><h3>Older adults</h3><p><strong>Goal:</strong> Reduce isolation and stay connected.</p><p><strong>Need:</strong> Familiar navigation, readable UI and accessible support.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section alt" id="design-journey">
+      <div class="detail-shell">
+        <header class="detail-heading detail-reveal"><small>Design process</small><h2>Design Journey</h2><p>A structured progression from understanding the problem to validating and refining the final experience.</p></header>
+        <ol class="ib-journey">
+          <li class="detail-reveal"><span><i class="bi bi-search"></i></span><small>01</small><h3>Discover</h3><p>Research the context, target groups and barriers to seeking support.</p></li>
+          <li class="detail-reveal"><span><i class="bi bi-bullseye"></i></span><small>02</small><h3>Define</h3><p>Translate findings into requirements, priorities and core journeys.</p></li>
+          <li class="detail-reveal"><span><i class="bi bi-lightbulb"></i></span><small>03</small><h3>Ideate</h3><p>Explore features, navigation and emotionally appropriate interactions.</p></li>
+          <li class="detail-reveal"><span><i class="bi bi-bezier2"></i></span><small>04</small><h3>Prototype</h3><p>Build connected low-, mid- and high-fidelity mobile flows in Figma.</p></li>
+          <li class="detail-reveal"><span><i class="bi bi-person-check"></i></span><small>05</small><h3>Test</h3><p>Observe key tasks and gather qualitative and structured feedback.</p></li>
+          <li class="detail-reveal"><span><i class="bi bi-arrow-repeat"></i></span><small>06</small><h3>Iterate</h3><p>Improve hierarchy, contrast, feedback, labels and component consistency.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="detail-section ib-case-study-section" id="design-evolution">
+      <div class="detail-shell">
+        <header class="detail-heading detail-reveal"><small>HCI case-study board</small><h2>From low-fidelity structure to a calm, polished experience</h2><p>This visual brings the design story together: prototype evolution, usability-led improvements, the visual system, and reusable interface components.</p></header>
+        <figure class="ib-case-study-board detail-reveal">
+          <button type="button" class="ib-case-study-preview"
+            data-lightbox-src="assets/img/InnerBalance HCI Case Study.png"
+            data-lightbox-title="InnerBalance HCI case-study board"
+            aria-label="Open the complete InnerBalance HCI case-study board">
+            <img src="assets/img/InnerBalance HCI Case Study.png"
+              alt="InnerBalance HCI case study showing low- and high-fidelity prototypes, usability improvements, visual design system, and interface components"
+              loading="lazy">
+            <span class="ib-case-study-cue"><i class="bi bi-arrows-fullscreen"></i> View full-size board</span>
+          </button>
+          <figcaption><strong>InnerBalance HCI Case Study</strong><span>Prototype evolution · usability testing · visual system · components and states</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="detail-section" id="high-fidelity">
+      <div class="detail-shell">
+        <header class="detail-heading detail-reveal"><small>High-fidelity designs</small><h2>A calm visual system across every key journey</h2><p>The final interface uses focused layouts, a consistent bottom navigation, supportive language and familiar mobile patterns.</p></header>
+        <div class="ib-product-gallery">
+          <button class="ib-product-shot ib-product-shot--primary detail-reveal" type="button" data-lightbox-src="assets/img/projects/innerbalance/innerbalance-board.png" data-lightbox-title="InnerBalance final high-fidelity screens"><span class="ib-board-crop ib-board-crop--final"><img src="assets/img/projects/innerbalance/innerbalance-board.png" alt="InnerBalance high-fidelity dashboard and final screens"></span><strong>Final product experience</strong><small>Dashboard, profile, membership and core wellness journeys</small></button>
+          <button class="ib-product-shot detail-reveal" type="button" data-lightbox-src="assets/img/projects/innerbalance/innerbalance-board.png" data-lightbox-title="InnerBalance onboarding and account screens"><span class="ib-board-crop ib-board-crop--entry"><img src="assets/img/projects/innerbalance/innerbalance-board.png" alt="InnerBalance welcome, registration and sign-in screens"></span><strong>Onboarding &amp; account</strong><small>A clear, reassuring entry into the experience</small></button>
+          <button class="ib-product-shot detail-reveal" type="button" data-lightbox-src="assets/img/projects/innerbalance/innerbalance-board.png" data-lightbox-title="InnerBalance journal and support screens"><span class="ib-board-crop ib-board-crop--support"><img src="assets/img/projects/innerbalance/innerbalance-board.png" alt="InnerBalance journal, support, relaxation and article screens"></span><strong>Reflection &amp; support</strong><small>Journaling, community support, relaxation and resources</small></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section alt" id="prototype">
+      <div class="detail-shell">
+        <div class="ib-figma-card detail-reveal">
+          <div class="ib-figma-copy"><span class="ib-figma-logo"><i class="bi bi-bezier2"></i></span><small>Interactive prototype</small><h2>Experience InnerBalance in Figma</h2><p>Explore the connected mobile journeys, interaction hierarchy and final visual language in the live prototype.</p><div class="case-actions"><a class="case-button" href="https://www.figma.com/proto/C7fmvOjmm4lEcJOmnW01Ej/HCI-GP?page-id=0%3A1&amp;node-id=14-3&amp;starting-point-node-id=3%3A12&amp;t=zpuUizLwxSqzOXGJ-1" target="_blank" rel="noopener noreferrer">Open Prototype <i class="bi bi-arrow-up-right"></i></a><a class="case-button secondary" href="#design-system">View Design System <i class="bi bi-arrow-down"></i></a></div></div>
+          <a class="ib-figma-preview" href="https://www.figma.com/design/C7fmvOjmm4lEcJOmnW01Ej/HCI-GP?node-id=0-1&amp;p=f" target="_blank" rel="noopener noreferrer" aria-label="Open the InnerBalance Figma design file"><span class="ib-board-crop ib-board-crop--figma"><img src="assets/img/projects/innerbalance/innerbalance-board.png" alt="Preview of the InnerBalance Figma design work"></span><span>Open design file <i class="bi bi-arrow-up-right"></i></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section" id="design-system">
+      <div class="detail-shell">
+        <header class="detail-heading detail-reveal"><small>Design system</small><h2>Consistency designed into every interaction</h2><p>A shared system brought the team’s screens together and improved clarity, accessibility and emotional reassurance.</p></header>
+        <div class="ib-system-grid">
+          <article class="ib-system-card detail-reveal"><i class="bi bi-palette"></i><h3>Colour palette</h3><div class="ib-swatches"><span class="swatch-primary">#6B21A8</span><span class="swatch-secondary">#A78BFA</span><span class="swatch-surface">#FAF5FF</span><span class="swatch-text">#374151</span></div></article>
+          <article class="ib-system-card detail-reveal"><i class="bi bi-fonts"></i><h3>Typography</h3><span class="ib-type-display">Aa</span><p>Readable sans-serif type with a clear scale and comfortable line spacing.</p></article>
+          <article class="ib-system-card detail-reveal"><i class="bi bi-toggle-on"></i><h3>Buttons</h3><div class="ib-component-preview"><span class="ib-demo-primary">Continue</span><span class="ib-demo-secondary">Learn more</span></div></article>
+          <article class="ib-system-card detail-reveal"><i class="bi bi-window-stack"></i><h3>Cards</h3><div class="ib-demo-card"><small>Daily reflection</small><strong>How are you feeling?</strong></div></article>
+          <article class="ib-system-card detail-reveal"><i class="bi bi-icons"></i><h3>Icons</h3><div class="ib-icon-row"><i class="bi bi-house-heart"></i><i class="bi bi-journal-heart"></i><i class="bi bi-chat-heart"></i><i class="bi bi-music-note-beamed"></i></div></article>
+          <article class="ib-system-card detail-reveal"><i class="bi bi-grid-3x3-gap"></i><h3>Spacing &amp; components</h3><p>Consistent padding, rounded surfaces and repeated patterns reduce cognitive effort.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section alt" id="testing">
+      <div class="detail-shell">
+        <header class="detail-heading detail-reveal"><small>Testing &amp; improvements</small><h2>Feedback became visible product improvements</h2><p>Testing focused on meaningful tasks such as logging a mood, saving a journal entry and finding community support.</p></header>
+        <ol class="ib-testing-timeline">
+          <li class="detail-reveal"><span>Round 1</span><div><small>Early prototype</small><h3>The interface felt too empty and visually limited.</h3><p><strong>Change:</strong> Added richer wellness content, quick actions, daily prompts and a warmer purple visual direction.</p></div></li>
+          <li class="detail-reveal"><span>Round 2</span><div><small>Mid-fidelity refinement</small><h3>Labels, contrast and button placement needed greater clarity.</h3><p><strong>Change:</strong> Improved typography, accessibility contrast, visual hierarchy and navigation consistency.</p></div></li>
+          <li class="detail-reveal"><span>Final</span><div><small>High-fidelity evaluation</small><h3>Users needed confidence that important actions were complete.</h3><p><strong>Change:</strong> Added confirmation feedback, refined microinteractions and standardised components across screens.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="detail-section alt ib-impact-section" id="contributions">
+      <div class="detail-shell">
+        <div class="ib-impact-heading detail-reveal">
+          <div><small>My contributions</small><h2>Designing with research,<br><em>clarity and care.</em></h2></div>
+          <div class="ib-role-note"><span class="ib-role-orbit" aria-hidden="true"><i class="bi bi-stars"></i></span><p>My documented role combined <strong>UI/UX design</strong> and <strong>user-experience research</strong> within a three-person team.</p></div>
+        </div>
+        <div class="ib-contribution-grid">
+          <article class="detail-reveal"><span class="ib-card-number">01</span><i class="bi bi-search"></i><h3>UX Research</h3><p>Supported research planning, questionnaire work and the synthesis of target-user needs.</p></article><article class="detail-reveal"><span class="ib-card-number">02</span><i class="bi bi-diagram-3"></i><h3>Interaction Design</h3><p>Translated requirements into focused mobile journeys and familiar interaction patterns.</p></article><article class="detail-reveal"><span class="ib-card-number">03</span><i class="bi bi-phone"></i><h3>UI Design</h3><p>Designed and refined high-fidelity screens, hierarchy, colour and component use.</p></article><article class="detail-reveal"><span class="ib-card-number">04</span><i class="bi bi-bezier2"></i><h3>Prototyping</h3><p>Built connected Figma flows to demonstrate and evaluate key tasks.</p></article><article class="detail-reveal"><span class="ib-card-number">05</span><i class="bi bi-person-check"></i><h3>Usability Testing</h3><p>Supported task observation, feedback capture and iterative improvement.</p></article><article class="detail-reveal"><span class="ib-card-number">06</span><i class="bi bi-easel2"></i><h3>Presentation</h3><p>Helped communicate the product rationale, process and final direction.</p></article><article class="detail-reveal"><span class="ib-card-number">07</span><i class="bi bi-file-text"></i><h3>Documentation</h3><p>Contributed requirements, process notes, evaluation findings and design decisions.</p></article><article class="detail-reveal"><span class="ib-card-number">08</span><i class="bi bi-layers"></i><h3>Figma System</h3><p>Applied shared styles and reusable patterns to improve cross-screen consistency.</p></article>
+        </div>
+        <div class="ib-tools-panel detail-reveal" id="tools-used">
+          <span class="ib-tools-glow ib-tools-glow--one" aria-hidden="true"></span><span class="ib-tools-glow ib-tools-glow--two" aria-hidden="true"></span>
+          <header><div><small>Tools used</small><h2>A focused toolkit for collaborative UX delivery</h2></div><span class="ib-tool-spark" aria-hidden="true"><i class="bi bi-stars"></i></span></header>
+          <div class="ib-tools-grid">
+            <article><i class="bi bi-bezier2"></i><div><h3>Figma</h3><p>Interface design, components and interactive prototyping.</p></div></article><article><i class="bi bi-grid-3x3-gap"></i><div><h3>Miro</h3><p>Research synthesis, brainstorming and collaborative mapping.</p></div></article><article><i class="bi bi-palette"></i><div><h3>Canva</h3><p>Process-board composition and visual storytelling.</p></div></article><article><i class="bi bi-file-earmark-text"></i><div><h3>Google Docs</h3><p>Shared requirements, research notes and team documentation.</p></div></article><article><i class="bi bi-file-earmark-slides"></i><div><h3>PowerPoint</h3><p>Project presentations and stakeholder-ready summaries.</p></div></article><article><i class="bi bi-journal-bookmark"></i><div><h3>Notion</h3><p>Structured notes, planning and collaborative knowledge organisation.</p></div></article>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="detail-section" id="overview"><div class="detail-shell ib-two-column">
-      <div><header class="detail-heading detail-reveal"><small>Project overview</small><h2>A calmer way to approach everyday wellbeing</h2></header><div class="detail-copy detail-reveal"><p>InnerBalance was developed as a human-computer interaction and UX design project focused on mental wellness. The project explored how thoughtful interface design, supportive language and simple user journeys could make digital wellness tools feel more approachable and less overwhelming.</p><p>The interface uses a soft purple visual identity, rounded UI elements, clear typography and uncluttered mobile layouts to create a calm and reassuring experience.</p></div></div>
-      <aside class="ib-info-card detail-reveal" aria-label="InnerBalance project information"><h3>Project information</h3><dl><div><dt>Project Type</dt><dd>Academic UX Design Project</dd></div><div><dt>Platform</dt><dd>Mobile Application</dd></div><div><dt>Role</dt><dd>UX/UI Designer and Project Team Member</dd></div><div><dt>Tools</dt><dd>Figma, Canva</dd></div><div><dt>Methods</dt><dd>User Research, Wireframing, Prototyping and Usability Evaluation</dd></div><div><dt>Focus</dt><dd>Mental Wellness and User-Centred Design</dd></div></dl></aside>
-    </div></section>
+    <section class="detail-section alt" id="project-documentation">
+      <div class="detail-shell">
+        <header class="detail-heading detail-reveal"><small>Supporting materials</small><h2>Project Documentation</h2><p>Supporting project reports, presentation slides and design documentation.</p></header>
+        <div class="ib-document-grid">
+          <article class="ib-document-card detail-reveal"><a class="ib-document-preview" href="assets/docs/innerbalance-assessment-part-1.pdf" target="_blank" rel="noopener noreferrer"><img src="assets/img/projects/innerbalance/assessment-part-1-preview.png" alt="First page preview of InnerBalance Assessment Part 1" loading="lazy"><span><i class="bi bi-file-earmark-pdf"></i> PDF</span></a><div><small>Presentation 1</small><h3>Problem, Users &amp; Product Concept</h3><p>The initial problem statement, target-user research and core wellness concept.</p><div class="case-actions"><a class="case-button" href="assets/docs/innerbalance-assessment-part-1.pdf" target="_blank" rel="noopener noreferrer">Open PDF <i class="bi bi-arrow-up-right"></i></a><a class="case-button secondary" href="assets/docs/innerbalance-assessment-part-1.pdf" download>Download <i class="bi bi-download"></i></a></div></div></article>
+          <article class="ib-document-card detail-reveal"><a class="ib-document-preview" href="assets/docs/innerbalance-assessment-part-2.pdf" target="_blank" rel="noopener noreferrer"><img src="assets/img/projects/innerbalance/assessment-part-2-preview.png" alt="First page preview of InnerBalance Assessment Part 2" loading="lazy"><span><i class="bi bi-file-earmark-pdf"></i> PDF</span></a><div><small>Presentation 2</small><h3>Requirements, Prototype &amp; Iteration</h3><p>Functional requirements, early prototype decisions, testing feedback and refinement.</p><div class="case-actions"><a class="case-button" href="assets/docs/innerbalance-assessment-part-2.pdf" target="_blank" rel="noopener noreferrer">Open PDF <i class="bi bi-arrow-up-right"></i></a><a class="case-button secondary" href="assets/docs/innerbalance-assessment-part-2.pdf" download>Download <i class="bi bi-download"></i></a></div></div></article>
+        </div>
+      </div>
+    </section>
 
-    <section class="detail-section alt"><div class="detail-shell"><header class="detail-heading detail-reveal"><small>The challenge</small><h2>Designing support without pressure</h2><p>Mental-wellness applications need to present sensitive information without making users feel judged, overwhelmed or confused. The challenge was to create a private-feeling, supportive and easy-to-navigate experience that encourages emotional wellbeing.</p></header><div class="ib-card-grid three">
-      <article class="ib-card detail-reveal"><i class="bi bi-heart"></i><h3>Emotional Sensitivity</h3><p>Designing interactions and language that feel supportive rather than clinical or intimidating.</p></article>
-      <article class="ib-card detail-reveal"><i class="bi bi-signpost-split"></i><h3>Simple Navigation</h3><p>Reducing cognitive effort through clear actions, familiar patterns and focused screen layouts.</p></article>
-      <article class="ib-card detail-reveal"><i class="bi bi-shield-check"></i><h3>User Trust</h3><p>Creating a calm, consistent and private-feeling interface that users can approach with confidence.</p></article>
-    </div></div></section>
-
-    <section class="detail-section"><div class="detail-shell"><header class="detail-heading detail-reveal"><small>Project goals</small><h2>Wellness design grounded in clarity and care</h2></header><div class="ib-card-grid four">
-      <article class="ib-card detail-reveal"><i class="bi bi-cloud-sun"></i><h3>Create a Calm Experience</h3><p>Use gentle visual styling and sufficient spacing to reduce visual pressure.</p></article>
-      <article class="ib-card detail-reveal"><i class="bi bi-emoji-smile"></i><h3>Support Emotional Awareness</h3><p>Help users reflect on their emotions and wellness patterns.</p></article>
-      <article class="ib-card detail-reveal"><i class="bi bi-universal-access"></i><h3>Improve Accessibility</h3><p>Use readable typography, clear contrast and understandable interface labels.</p></article>
-      <article class="ib-card detail-reveal"><i class="bi bi-calendar2-heart"></i><h3>Encourage Healthy Habits</h3><p>Design simple interactions that support consistent wellness routines.</p></article>
-    </div></div></section>
-
-    <section class="detail-section alt"><div class="detail-shell"><header class="detail-heading detail-reveal"><small>Design process</small><h2>From understanding the problem to refining the prototype</h2></header><ol class="ib-process">
-      <li class="detail-reveal"><span>01</span><strong>Discover</strong><p>Understand the problem space, intended users and mental-wellness context.</p></li>
-      <li class="detail-reveal"><span>02</span><strong>Define</strong><p>Identify user needs, design priorities, challenges and project goals.</p></li>
-      <li class="detail-reveal"><span>03</span><strong>Ideate</strong><p>Explore features, information architecture and possible mobile user flows.</p></li>
-      <li class="detail-reveal"><span>04</span><strong>Design</strong><p>Develop wireframes and high-fidelity mobile interface screens in Figma.</p></li>
-      <li class="detail-reveal"><span>05</span><strong>Prototype</strong><p>Connect key screens to create an interactive mobile experience.</p></li>
-      <li class="detail-reveal"><span>06</span><strong>Evaluate</strong><p>Review the interface, gather feedback and identify opportunities for refinement.</p></li>
-    </ol></div></section>
-
-    <section class="detail-section"><div class="detail-shell"><header class="detail-heading detail-reveal"><small>User needs</small><h2>Understanding User Needs</h2><p>The design focused on users who may feel stressed, emotionally overwhelmed or unsure how to begin reflecting on their wellbeing.</p></header><div class="ib-card-grid three"><article class="ib-card detail-reveal"><i class="bi bi-chat-left-text"></i><h3>Clarity</h3><p>Users need direct language and actions that are easy to understand.</p></article><article class="ib-card detail-reveal"><i class="bi bi-heart-pulse"></i><h3>Reassurance</h3><p>The experience should feel welcoming, private and non-judgemental.</p></article><article class="ib-card detail-reveal"><i class="bi bi-grid-1x2"></i><h3>Consistency</h3><p>Repeated visual patterns help users learn and navigate confidently.</p></article></div></div></section>
-
-    <section class="detail-section alt"><div class="detail-shell"><header class="detail-heading detail-reveal"><small>User flow</small><h2>Simplifying the Wellness Journey</h2><p>The journey minimises unnecessary decisions. Each stage guides the user toward one focused action while maintaining a clear path back to the main experience.</p></header><ol class="ib-user-flow"><li class="detail-reveal"><i class="bi bi-box-arrow-in-right"></i><span>Welcome or Sign In</span></li><li class="detail-reveal"><i class="bi bi-house-heart"></i><span>Home Dashboard</span></li><li class="detail-reveal"><i class="bi bi-emoji-smile"></i><span>Emotional Check-In</span></li><li class="detail-reveal"><i class="bi bi-journal-heart"></i><span>Wellness Activity or Reflection</span></li><li class="detail-reveal"><i class="bi bi-graph-up"></i><span>Progress Review</span></li></ol></div></section>
-
-    <section class="detail-section"><div class="detail-shell"><header class="detail-heading detail-reveal"><small>Wireframes and exploration</small><h2>From Structure to Interface</h2><p>Early layouts focused on organising content, establishing screen hierarchy and reducing distractions before detailed visual styling was applied.</p></header><div class="ib-wireframe-grid">
-      <!-- Replace with exported InnerBalance wireframe image -->
-      <button class="ib-media-placeholder detail-reveal" type="button" data-lightbox-src="assets/img/projects/innerbalance/innerbalance-wireframes.jpg" data-lightbox-title="InnerBalance wireframes"><img src="assets/img/projects/innerbalance/innerbalance-wireframes.jpg" alt="Low-fidelity InnerBalance mobile wireframes" loading="lazy" onerror="this.hidden=true"><span><i class="bi bi-phone"></i><strong>Low-fidelity wireframes</strong><small>Save as innerbalance-wireframes.jpg</small></span></button>
-      <!-- Replace with exported Canva board image -->
-      <button class="ib-media-placeholder detail-reveal" type="button" data-lightbox-src="assets/img/projects/innerbalance/innerbalance-board.png" data-lightbox-title="InnerBalance UX process board"><img src="assets/img/projects/innerbalance/innerbalance-board.png" alt="InnerBalance UX planning board" loading="lazy"><span><i class="bi bi-kanban"></i><strong>Planning and exploration board</strong><small>InnerBalance UX process</small></span></button>
-    </div></div></section>
-
-    <section class="detail-section alt"><div class="detail-shell"><header class="detail-heading detail-reveal"><small>Canva project board</small><h2>UX Process Board</h2></header><button class="ib-board-preview detail-reveal" type="button" data-lightbox-src="assets/img/projects/innerbalance/innerbalance-board.png" data-lightbox-title="InnerBalance UX process board"><img src="assets/img/projects/innerbalance/innerbalance-board.png" alt="Full InnerBalance UX research and design process board" loading="lazy"><span><i class="bi bi-kanban"></i><strong>InnerBalance UX Process Board</strong><small>Full-width board preview</small></span></button><div class="ib-board-caption detail-reveal"><p>The project board documents the research, design thinking, interface exploration and development of the InnerBalance mobile experience.</p><a class="case-button secondary" href="https://www.canva.com/design/DAGvLnEZzGg/byMm0EC7vacyEv6_S-4UEA/edit" target="_blank" rel="noopener noreferrer">Open Live Canva Board <i class="bi bi-box-arrow-up-right"></i></a></div></div></section>
-
-    <section class="detail-section"><div class="detail-shell"><header class="detail-heading detail-reveal"><small>UI design showcase</small><h2>Designing a Calm Mobile Experience</h2></header><div class="ib-screen-gallery">
-      <button class="ib-screen-card detail-reveal" type="button" data-lightbox-src="assets/img/projects/innerbalance/innerbalance-login.png" data-lightbox-title="Welcome and Sign-In"><span class="ib-device"><img src="assets/img/projects/innerbalance/innerbalance-login.png" alt="InnerBalance welcome and sign-in screen" loading="lazy" onerror="this.hidden=true"><i class="bi bi-box-arrow-in-right"></i></span><strong>Welcome and Sign-In</strong><p>A welcoming entry screen using clear form controls and a focused primary action.</p></button>
-      <button class="ib-screen-card detail-reveal" type="button" data-lightbox-src="assets/img/projects/innerbalance/innerbalance-home.png" data-lightbox-title="Wellness Dashboard"><span class="ib-device"><img src="assets/img/projects/innerbalance/innerbalance-home.png" alt="InnerBalance wellness dashboard" loading="lazy" onerror="this.hidden=true"><i class="bi bi-house-heart"></i></span><strong>Wellness Dashboard</strong><p>A central overview that guides users toward relevant wellness activities.</p></button>
-      <button class="ib-screen-card detail-reveal" type="button" data-lightbox-src="assets/img/projects/innerbalance/innerbalance-checkin.png" data-lightbox-title="Emotional Check-In"><span class="ib-device"><img src="assets/img/projects/innerbalance/innerbalance-checkin.png" alt="InnerBalance emotional check-in screen" loading="lazy" onerror="this.hidden=true"><i class="bi bi-emoji-smile"></i></span><strong>Emotional Check-In</strong><p>A simple interaction designed to encourage emotional awareness.</p></button>
-      <button class="ib-screen-card detail-reveal" type="button" data-lightbox-src="assets/img/projects/innerbalance/innerbalance-activity.png" data-lightbox-title="Guided Activity"><span class="ib-device"><img src="assets/img/projects/innerbalance/innerbalance-activity.png" alt="InnerBalance guided wellness activity" loading="lazy" onerror="this.hidden=true"><i class="bi bi-journal-heart"></i></span><strong>Guided Activity</strong><p>A focused wellness activity presented in a clear, supportive format.</p></button>
-      <button class="ib-screen-card detail-reveal" type="button" data-lightbox-src="assets/img/projects/innerbalance/innerbalance-progress.png" data-lightbox-title="Progress Reflection"><span class="ib-device"><img src="assets/img/projects/innerbalance/innerbalance-progress.png" alt="InnerBalance progress reflection screen" loading="lazy" onerror="this.hidden=true"><i class="bi bi-graph-up-arrow"></i></span><strong>Progress Reflection</strong><p>A visual overview that helps users recognise patterns and progress.</p></button>
-    </div></div></section>
-
-    <section class="detail-section alt"><div class="detail-shell"><header class="detail-heading detail-reveal"><small>Design system</small><h2>Visual Design</h2></header><div class="ib-design-grid"><article class="ib-design-card detail-reveal"><h3>Colour Palette</h3><div class="ib-swatches"><span style="--swatch:#6B21A8">#6B21A8</span><span style="--swatch:#FAF5FF">#FAF5FF</span><span style="--swatch:#F3E8FF">#F3E8FF</span><span style="--swatch:#374151">#374151</span></div></article><article class="ib-design-card detail-reveal"><h3>Typography</h3><p class="ib-type-sample">Aa</p><p>Clean, readable sans-serif typography supports clarity and accessibility.</p></article><article class="ib-design-card detail-reveal"><h3>Components</h3><div class="ib-component-sample"><span class="ib-mini-field">Email address</span><span class="ib-mini-button">Continue</span><span class="ib-mini-card">Daily check-in</span></div></article><article class="ib-design-card detail-reveal"><h3>Interaction Style</h3><p>Clear hierarchy, focused actions, subtle feedback and consistent patterns keep interactions understandable.</p></article></div></div></section>
-
-    <section class="detail-section"><div class="detail-shell"><header class="detail-heading detail-reveal"><small>Key design decisions</small><h2>Choices that shaped the experience</h2></header><div class="ib-decisions"><article class="ib-decision detail-reveal"><div class="ib-decision-media purple"><i class="bi bi-palette"></i></div><div><small>Decision 01</small><h3>Calm Purple Visual Identity</h3><p>Purple and lavender tones communicate calmness, reflection and emotional support while maintaining a polished digital appearance.</p></div></article><article class="ib-decision reverse detail-reveal"><div class="ib-decision-media hierarchy"><i class="bi bi-layout-text-window-reverse"></i></div><div><small>Decision 02</small><h3>Focused Screen Hierarchy</h3><p>Each screen prioritises one main action, supported by clear labels, generous spacing and limited competing content.</p></div></article><article class="ib-decision detail-reveal"><div class="ib-decision-media patterns"><i class="bi bi-phone"></i></div><div><small>Decision 03</small><h3>Familiar Mobile Patterns</h3><p>Recognisable form fields, buttons, navigation patterns and card layouts reduce the learning effort required from users.</p></div></article></div></div></section>
-
-    <section class="detail-section alt"><div class="detail-shell ib-prototype"><div><header class="detail-heading detail-reveal"><small>Interactive prototype</small><h2>Explore the Interactive Prototype</h2><p>The Figma prototype demonstrates the key mobile flows and lets visitors experience the intended navigation, interface hierarchy and visual consistency.</p></header><a class="case-button detail-reveal" href="https://www.figma.com/proto/C7fmvOjmm4lEcJOmnW01Ej/HCI-GP?page-id=0%3A1&amp;node-id=14-3&amp;starting-point-node-id=3%3A12&amp;t=zpuUizLwxSqzOXGJ-1" target="_blank" rel="noopener noreferrer">Launch Figma Prototype <i class="bi bi-box-arrow-up-right"></i></a></div><a class="ib-prototype-phone detail-reveal" href="https://www.figma.com/proto/C7fmvOjmm4lEcJOmnW01Ej/HCI-GP?page-id=0%3A1&amp;node-id=14-3&amp;starting-point-node-id=3%3A12&amp;t=zpuUizLwxSqzOXGJ-1" target="_blank" rel="noopener noreferrer" aria-label="Launch the InnerBalance Figma prototype in a new tab"><i class="bi bi-flower1"></i><strong>InnerBalance</strong><span>Tap to explore</span><i class="bi bi-arrow-up-right"></i></a></div></section>
-
-    <section class="detail-section"><div class="detail-shell"><header class="detail-heading detail-reveal"><small>Usability and evaluation</small><h2>Evaluation and Refinement</h2><p>The prototype was reviewed to identify navigation issues, inconsistent visual patterns and areas where instructions could be clearer. Feedback informed improvements to hierarchy, button visibility, spacing and interaction consistency.</p></header><div class="ib-card-grid three"><article class="ib-card detail-reveal"><i class="bi bi-signpost-2"></i><h3>Clearer Navigation</h3><p>Improved labels and stronger visual hierarchy make actions easier to locate.</p></article><article class="ib-card detail-reveal"><i class="bi bi-ui-checks-grid"></i><h3>More Consistent Components</h3><p>Repeated styling helps users understand interactive elements across screens.</p></article><article class="ib-card detail-reveal"><i class="bi bi-wind"></i><h3>Reduced Visual Overload</h3><p>Focused layouts and additional whitespace support a calmer experience.</p></article></div></div></section>
-
-    <section class="detail-section alt"><div class="detail-shell"><header class="detail-heading detail-reveal"><small>Reflection</small><h2>What I Learned</h2></header><div class="reflection detail-reveal">The InnerBalance project strengthened my understanding of user-centred mobile design and the importance of emotional sensitivity in digital experiences. It also helped me develop practical skills in interface hierarchy, mobile prototyping, design consistency, collaborative project work and presenting UX decisions clearly.</div><div class="case-skill-tags detail-reveal"><span>Mobile UX Design</span><span>Interactive Prototyping</span><span>Visual Hierarchy</span><span>Collaborative Design</span></div><nav class="project-pagination" aria-label="Project navigation"><a href="technology-literature-review.html"><small>Previous project</small>Technology Literature Review</a><a class="all-projects" href="index.html#projects">Back to All Projects</a><a href="sme-digital-transformation.html"><small>Next project</small>QR Ordering &amp; Queue Management</a></nav></div></section>
+    <section class="detail-section" id="reflection">
+      <div class="detail-shell">
+        <header class="detail-heading detail-reveal"><small>Reflection</small><h2>What the project strengthened</h2></header>
+        <div class="ib-reflection-grid">
+          <article class="detail-reveal"><i class="bi bi-hand-thumbs-up"></i><h3>What worked well</h3><p>A shared focus on user needs helped the team move from a broad mental-wellness challenge to a coherent product direction. Frequent feedback made design decisions easier to explain and defend.</p></article>
+          <article class="detail-reveal"><i class="bi bi-signpost-split"></i><h3>Challenges</h3><p>Maintaining visual consistency across contributors and balancing useful content with a calm interface required deliberate communication, shared components and prioritisation.</p></article>
+          <article class="detail-reveal"><i class="bi bi-lightbulb"></i><h3>What I learned</h3><p>I strengthened my ability to connect research with interface decisions, communicate within a design team and treat usability feedback as an input for continuous iteration rather than a final check.</p></article>
+        </div>
+        <nav class="project-pagination" aria-label="Project navigation"><a href="technology-literature-review.html"><small>Previous project</small>Technology Literature Review</a><a class="all-projects" href="index.html#projects">Back to All Projects</a><a href="sme-digital-transformation.html"><small>Next project</small>QR Ordering &amp; Queue Management</a></nav>
+      </div>
+    </section>
   </main>
 
-  <dialog class="ib-lightbox" id="innerbalance-lightbox" aria-labelledby="ib-lightbox-title"><div><header><h2 id="ib-lightbox-title">InnerBalance project image</h2><button type="button" data-lightbox-close aria-label="Close image preview"><i class="bi bi-x-lg"></i></button></header><figure><img data-lightbox-image src="" alt=""><div data-lightbox-fallback><i class="bi bi-image"></i><strong>Image placeholder</strong><small>Add the exported project image to the displayed path.</small></div><figcaption data-lightbox-caption></figcaption></figure></div></dialog>
+  <dialog class="ib-lightbox" id="innerbalance-lightbox" aria-labelledby="ib-lightbox-title"><div><header><h2 id="ib-lightbox-title">InnerBalance project image</h2><button type="button" data-lightbox-close aria-label="Close image preview"><i class="bi bi-x-lg"></i></button></header><figure><img data-lightbox-image src="" alt=""><div data-lightbox-fallback><i class="bi bi-image"></i><strong>Image unavailable</strong><small>The requested project image could not be loaded.</small></div><figcaption data-lightbox-caption></figcaption></figure></div></dialog>
 
   <footer class="detail-footer"><a class="brand" href="index.html#home"><span class="brand-mark">L</span><span>Lia.</span></a><p>Designed with intention · Built with curiosity</p><span>© <span data-year></span> Ei Myat Moe Oo</span></footer>
   <button class="to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
   <script src="assets/js/innerbalance.js"></script>
+  <script src="assets/js/case-study-system.js"></script>
 </body>
 </html>
