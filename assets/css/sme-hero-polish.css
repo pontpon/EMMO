@@ -1,0 +1,38 @@
+/* Readability and motion polish only: no hero geometry is changed. */
+.sme2-hero{color:#1e293b;background:radial-gradient(circle at 77% 18%,rgba(196,181,253,.42),transparent 32%),radial-gradient(circle at 88% 76%,rgba(147,197,253,.22),transparent 27%),linear-gradient(145deg,#fafaff 0%,#f5f2ff 55%,#eef1ff 100%)}
+.sme2-hero:before{opacity:.38;background-image:linear-gradient(rgba(99,102,241,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(99,102,241,.035) 1px,transparent 1px);mask-image:linear-gradient(to right,transparent,#000)}
+.sme2-hero:after{position:absolute;z-index:-1;right:2%;bottom:5%;width:310px;height:310px;border-radius:50%;background:radial-gradient(circle,rgba(147,197,253,.2),transparent 68%);content:"";pointer-events:none;animation:sme-hero-blue-float 18s ease-in-out infinite alternate}
+.sme2-hero-glow{right:9%;top:15%;background:radial-gradient(circle,rgba(167,139,250,.28),transparent 70%);filter:blur(35px);animation:sme-hero-lavender-float 18s ease-in-out infinite alternate}
+.sme2-hero .detail-kicker{color:#7c6cf8;font-weight:700;letter-spacing:.18em;opacity:.95}
+.sme2-hero h1{color:#1e293b;text-shadow:0 8px 24px rgba(99,102,241,.08)}
+.sme2-hero h1 em{color:transparent;background:linear-gradient(135deg,#6366f1,#8b5cf6,#a78bfa);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.sme2-subtitle{max-width:720px;color:#334155;font-size:1.2rem;font-weight:600;line-height:1.6}
+.sme2-hero .detail-lead{max-width:650px;color:#64748b;font-size:1rem;line-height:1.8}
+.sme2-meta span{color:#334155;font-weight:600;opacity:1;background:rgba(255,255,255,.56);border-color:rgba(255,255,255,.55);box-shadow:0 20px 40px rgba(30,41,59,.08);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.sme2-meta small{color:#7c6cf8;font-weight:700;letter-spacing:.1em}
+.sme2-hero .case-button{border-color:rgba(255,255,255,.55);box-shadow:0 20px 40px rgba(30,41,59,.08);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.sme2-hero .case-button:hover{transform:translateY(-3px);box-shadow:0 18px 35px rgba(99,102,241,.28)}
+.sme2-hero .case-button.secondary:hover,.sme2-hero .case-button.text:hover{border-color:#6366f1;color:#4f46e5;background:rgba(99,102,241,.05)}
+.sme2-hero .case-button span{display:inline-block;transition:transform .28s ease}.sme2-hero .case-button:hover span{transform:translateX(4px)}
+.sme2-hero .case-button.text{color:#6366f1}.sme2-hero .case-button.text span{animation:sme-scroll-arrow 2s ease-in-out infinite}.sme2-hero .case-button.text:hover span{transform:none}
+.sme2-hero-art{transform:none;animation:none}
+.sme2-browser{opacity:0;animation:sme-browser-reveal .9s .08s cubic-bezier(.22,1,.36,1) forwards,sme-browser-float 8s 1.1s ease-in-out infinite}
+.sme2-browser:after{position:absolute;inset:0;background:linear-gradient(110deg,transparent 28%,rgba(255,255,255,.6) 48%,transparent 68%);content:"";opacity:0;pointer-events:none;transform:translateX(-120%);animation:sme-browser-light 12s 1.8s ease-in-out infinite}
+.sme2-phone{opacity:0;animation:sme-phone-reveal .9s .2s cubic-bezier(.22,1,.36,1) forwards,sme-phone-float 10s 1.3s ease-in-out infinite}
+.sme2-qr{opacity:0;border-color:rgba(255,255,255,.55);box-shadow:0 20px 40px rgba(30,41,59,.08);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);animation:sme-card-reveal .75s .3s cubic-bezier(.22,1,.36,1) forwards,sme-qr-float 9s 1.2s ease-in-out infinite}
+.sme2-queue{opacity:0;border-color:rgba(255,255,255,.55);box-shadow:0 20px 40px rgba(30,41,59,.08);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);animation:sme-card-reveal .75s .4s cubic-bezier(.22,1,.36,1) forwards,sme-queue-pulse 8s 1.4s ease-in-out infinite}
+.sme2-hero .detail-hero-grid>div:first-child.visible>*{opacity:0;transform:translateY(20px);animation:sme-text-reveal .7s cubic-bezier(.22,1,.36,1) forwards}
+.sme2-hero .detail-hero-grid>div:first-child.visible>.detail-kicker{animation-delay:.04s}.sme2-hero .detail-hero-grid>div:first-child.visible>h1{animation-delay:.12s}.sme2-hero .detail-hero-grid>div:first-child.visible>.sme2-subtitle{animation-delay:.2s}.sme2-hero .detail-hero-grid>div:first-child.visible>.detail-lead{animation-delay:.28s}.sme2-hero .detail-hero-grid>div:first-child.visible>.sme2-meta{animation-delay:.36s}.sme2-hero .detail-hero-grid>div:first-child.visible>.case-actions{animation-delay:.44s}
+@keyframes sme-text-reveal{to{opacity:1;transform:translateY(0)}}
+@keyframes sme-browser-reveal{from{opacity:0;transform:translateY(14px) scale(.96) rotate(-1deg)}to{opacity:1;transform:translateY(0) scale(1) rotate(-1deg)}}
+@keyframes sme-browser-float{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-8px) rotate(-1deg)}}
+@keyframes sme-phone-reveal{from{opacity:0;transform:translateY(14px) scale(.96) rotate(2deg)}to{opacity:1;transform:translateY(0) scale(1) rotate(2deg)}}
+@keyframes sme-phone-float{0%,100%{transform:translateY(0) rotate(2deg)}50%{transform:translateY(-12px) rotate(2deg)}}
+@keyframes sme-card-reveal{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:scale(1)}}
+@keyframes sme-qr-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes sme-queue-pulse{0%,92%,100%{transform:scale(1)}96%{transform:scale(1.02)}}
+@keyframes sme-scroll-arrow{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+@keyframes sme-browser-light{0%,82%{opacity:0;transform:translateX(-120%)}84%{opacity:.06}94%{opacity:.06;transform:translateX(120%)}96%,100%{opacity:0;transform:translateX(120%)}}
+@keyframes sme-hero-lavender-float{from{transform:translate3d(0,0,0)}to{transform:translate3d(8px,-8px,0)}}
+@keyframes sme-hero-blue-float{from{transform:translate3d(0,0,0)}to{transform:translate3d(-8px,8px,0)}}
+@media(prefers-reduced-motion:reduce){.sme2-hero:after,.sme2-hero-glow,.sme2-browser,.sme2-browser:after,.sme2-phone,.sme2-qr,.sme2-queue,.sme2-hero .case-button.text span,.sme2-hero .detail-hero-grid>div:first-child.visible>*{animation:none!important;opacity:1;transform:none}.sme2-browser{transform:rotate(-1deg)}.sme2-phone{transform:rotate(2deg)}}
